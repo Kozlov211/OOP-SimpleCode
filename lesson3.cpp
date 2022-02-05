@@ -4,26 +4,30 @@
 using namespace std;
 
 
-class Human {
+class A {
 public:
-	string name;
+	A() {
+		cout << "Class A" << endl;
+	}
+	~A(){
+		cout << "~Class A" << endl;
+	}
+
 };
 
-
-class Student : public Human {
+class B : public A {
 public:
-	string group;
-};
+	B() {
+		cout << "Class B" << endl;
+	}
+	~B() {
+		cout << "~Class B" << endl;
+	}
 
-class Proffessor : public Human{
-public:
-	string subject;
 };
 
 int main() {
-	Student st;
-	st.name = "Вася";
-	cout << st.name << endl;
+	B b;
 	return 0;
 }
 
