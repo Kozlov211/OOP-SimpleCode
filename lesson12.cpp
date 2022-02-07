@@ -12,14 +12,14 @@ private:
 	int HP;
 };
 
-class Orc : public Charecter {
+class Orc : public virtual Charecter {
 public:
 	Orc() {
 		cout << "Вызвался конструктор Orc" << endl;
 	}
 };
 
-class Warrior : public Charecter {
+class Warrior : public virtual Charecter {
 public:
 	Warrior() {
 		cout << "Вызвался конструктор Warrior" << endl;
